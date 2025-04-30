@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quick Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="quill/quill.snow.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>📝 Quick Notes</h2>
+    <div id="editor-toolbar">
+      <button class="ql-bold">B</button>
+      <button class="ql-italic">I</button>
+      <button class="ql-list" value="ordered">1.</button>
+      <button class="ql-list" value="bullet">•</button>
+      <button class="ql-indent" value="-1">Indent</button>
+      <button class="ql-indent" value="+1">Outdent</button>
+    </div>
+    <div id="editor"></div>
+    <div class="status" id="statusMessage"></div>
+    <button id="saveNote">Save Note</button>
+    <button id="clearAllNotes" style="display: none;">Clear All Notes</button>
+    <div id="notesContainer"></div>
+  </div>
+  <script src="quill/quill.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

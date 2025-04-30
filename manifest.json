@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Note Taker",
+  "version": "1.0",
+  "description": "A simple note taking extension with rich text editing and Chrome sync.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "3d-notes.png",
+      "48": "3d-notes.png",
+      "128": "3d-notes.png"
+    }
+  },
+  "icons": {
+    "16": "3d-notes.png",
+    "48": "3d-notes.png",
+    "128": "3d-notes.png"
+  }
+}

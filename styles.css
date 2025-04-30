@@ -1,0 +1,194 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 15px;
+  background-color: #f4f4f4;
+  width: 350px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#editor {
+  height: 150px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+#errorMsg, .status {
+  font-size: 14px;
+  text-align: center;
+  display: none; /* Hidden by default */
+}
+
+.status.saved {
+  color: green;
+}
+
+.status.deleted {
+  color: red;
+}
+
+#editor-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#saveNote {
+  margin-top: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#saveNote:hover {
+  background-color: #45a049;
+}
+
+#clearAllNotes {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#clearAllNotes:hover {
+  background-color: #e53935;
+}
+
+#notesContainer .note {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.note-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.note-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#notesContainer {
+  width: 100%;
+}
+
+
+
+.more-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #0056b3;
+}
+
+.edit-note{
+  width: 20px;
+  height: 20px;
+  object-fit: contain; /* Ensure the images are scaled proportionally */
+  vertical-align: middle; /* Vertically align the icon */
+}
+.delete-note{
+  width: 20px;
+  height: 20px;
+  object-fit: contain; /* Ensure the images are scaled proportionally */
+  vertical-align: middle; /* Vertically align the icon */
+}
+
+/* Style for the note container */
+.note {
+  padding: 10px; /* Adds padding inside the note */
+  margin-bottom: 10px; /* Adds space between each note */
+  width: 100%; /* Ensures the note takes full width of the container */
+  max-width: 100%; /* Prevents the note from exceeding the container's width */
+  box-sizing: content-box; /* Ensures padding is not included in the width */
+  border-radius: 8px; /* Rounded corners for a more polished look */
+  font-family: 'Poppins', sans-serif; /* Custom font for the text */
+}
+
+/* Style for the content inside the note */
+.note-content {
+  white-space: pre-wrap; /* Allows long text to wrap correctly */
+  word-wrap: break-word; /* Ensures that long words break if necessary */
+  font-size: 14px; /* Font size for the note content */
+  overflow: hidden; /* Prevents the text from spilling out */
+  line-height: 1.5; /* Adds some spacing between lines for readability */
+  padding: 0; /* No padding inside the content */
+}
+
+/* To ensure the note adapts dynamically based on content */
+.note-content.long-text {
+  overflow-y: auto; /* Adds a scrollbar when content exceeds height */
+}
+
+/* Style for the note header (optional, for titles) */
+.note-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Style for the note actions (edit/delete buttons) */
+.note-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.note-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.note-actions button:hover {
+  color: #007BFF; /* Add hover effect for the buttons */
+}
