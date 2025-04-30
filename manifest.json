@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Quick Note Taker",
+  "name": "SavaNote - Quick Note Taker",
   "version": "1.0",
-  "description": "A simple note taking extension with rich text editing and Chrome sync.",
+  "description": "A simple note taking extension with rich text editing and local chrome storage.",
   "permissions": ["storage"],
   "action": {
     "default_popup": "popup.html",
