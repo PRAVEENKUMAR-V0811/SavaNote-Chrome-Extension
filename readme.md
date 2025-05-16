@@ -1,5 +1,7 @@
-<img src="3d-notes.png" width="50" height="50" alt="SavaNote Logo" style="vertical-align:middle" />&nbsp;<br>
-# SavaNote - Chrome Extension
+<p align="left">
+  <img src="3d-notes.png" alt="SavaNote Logo" width="40" style="vertical-align: middle;"/>
+  <span style="font-size: 2rem; font-weight: bold; vertical-align: middle;"><strong>SavaNote - Chrome Extension<strong/></span>
+</p>
 
 SavaNote is a sleek and user-friendly Chrome extension that allows users to quickly save, edit, and manage notes right from their browser. Whether you're jotting down quick thoughts, saving important reminders, or organizing your ideas, SavaNote has you covered with a minimalistic and intuitive interface.
 
